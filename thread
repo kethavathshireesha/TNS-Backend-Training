@@ -1,0 +1,18 @@
+package com.avn.tns.threadDemo;
+// demofor thread class implementation
+//life cycle --new,runnable (run),running(start),blocked
+public class MYThread extends Thread {
+    String mesg;
+    public void run()
+    for(int i=0;i<5;i++){
+    System.out.println(Thread.currentThread());
+    }
+}
+    public static void main(String[]args){
+        //ob is representing thread 1
+        MYThread ob=new MYThread();
+        ob.start();
+        //ob is representing thread 2
+        MYThread obj=new MYThread();
+        ob.start();
+    }
